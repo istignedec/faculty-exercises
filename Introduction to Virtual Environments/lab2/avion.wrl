@@ -1,0 +1,128 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title "Avion"
+}
+
+Viewpoint {
+    position 0.0 0.0 5.0
+    description "Entry view"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+# boje pozadine
+Background {
+    skyColor    [ 0.0 0.5 0.7 ]
+    groundColor [ 0.2 0.3 0.1 ]
+}
+
+# inicijali iznad krila
+Transform {
+	translation 0.0 0.1 -1.1
+	rotation 0.0 -0.5 0.0 -1.57
+	scale 0.4 0.4 0.4
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {diffuseColor 0.0 0.0 0.0}
+			}
+			geometry Text {
+				string [ "I Š" ]
+				}
+			}
+		]
+	}
+
+# crtanje aviona
+DEF Avion Transform {
+children [
+
+		# crtanje trupa
+		DEF Trup Transform {
+		children [
+			Transform {
+				scale 1.9 0.3 0.4
+				children [ 
+					DEF Kugla Shape {
+						appearance Appearance {
+							material Material { diffuseColor 1.0 1.0 1.0 }
+							texture ImageTexture { url ["trup.jpg"] }
+						}
+						geometry Sphere { }
+					}
+				]
+			}
+			
+			Transform {
+				translation -1.5 0.25 0.0
+				rotation 0.0 0.0 1.0 -0.8
+				scale 0.5 0.2 0.075
+				children [
+					DEF Kugla1 Shape {
+						appearance Appearance {
+							material Material { diffuseColor 1.0 1.0 1.0 }
+						}
+						geometry Sphere { }
+					}
+				]
+			} 
+			
+			Transform {
+				translation -1.72 0.5 0.0
+				rotation 0.0 0.0 1.0 1.57
+				scale 0.02 0.12 0.4
+				children [ USE Kugla1 ]
+			}
+		]
+		}
+		
+		# crtanje krila aviona
+		DEF Krila Transform {
+		children [
+			Transform {
+				translation 0.2 0.045 0.0
+				rotation 0.0 1.0 0.0 1.57
+				scale 2.4 0.075 0.5
+				children [
+					DEF Kugla2 Shape {
+						appearance Appearance {
+							material Material { diffuseColor 1.0 1.0 1.0 }
+						}
+						geometry Sphere { }
+					}
+				]
+			}
+			
+			# crtanje elise
+			DEF Elise Transform {
+			children [
+			
+				Transform {
+					translation 1.82 0.0 0.0
+					scale 0.0035 0.35 0.035
+					children [
+						DEF Elisa Shape {
+							appearance Appearance {
+								material Material { diffuseColor 0.0 0.0 0.0 }
+							}
+							geometry Sphere { }
+						}
+					]
+				}
+				
+				Transform {
+					translation 1.82 0.0 0.0
+					rotation 1.0 0.0 0.0 1.57
+					scale 0.0035 0.35 0.035
+					children [ USE Elisa ]
+				}
+			]
+			}	
+		]
+		}		
+]
+}

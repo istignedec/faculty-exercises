@@ -1,0 +1,137 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title "Sunčev sustav"
+}
+
+Viewpoint {
+    position 0.0 0.0 100.0
+    description "Entry view"
+}
+
+NavigationInfo {
+    type [ "EXAMINE", "ANY" ]
+    headlight TRUE
+}
+
+Background {
+    skyColor    [ 0.0 0.0 0.0 ]
+    groundColor [ 0.0 0.0 0.0 ]
+}
+
+
+Transform {
+	children [
+		DEF Sunce Transform {
+		# sunce u sredistu sustava
+			children [
+				Shape {
+					appearance Appearance { 
+						material Material {diffuseColor 0.84 0.86 0.042}
+						texture ImageTexture {url "sunce.jpg"}
+					}
+					geometry Sphere {radius 6.96}
+				}
+			]
+		}	
+		# postavljamo Zemlju
+		# pomocu center -14.96 0.0 0.0 vraćamo os rotacije u ishodiste globalnog KS zbog animacije rotacije Zemlje oko Sunca
+		DEF ZemljaMjesec Transform {
+			translation 14.96 0.0 0.0
+			center -14.96 0.0 0.0
+			children [
+				
+				DEF Zemlja Transform {
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {diffuseColor 0.0 0.5 0.75}
+								texture ImageTexture {url "zemlja.png"}
+							}
+							geometry Sphere {radius 0.63}
+						}
+					]
+				}
+				# Mjesec se postavlja u odnosu na Zemlju
+				# pomocu center -1.0 0.0 0.0 postavljamo os rotacije u ishodiste KS Zemlje
+				DEF Mjesec Transform {
+					translation 1.0 0.0 0.0
+					center -1.0 0.0 0.0
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {diffuseColor 0.75 0.75 0.75}
+								texture ImageTexture {url "mjesec.jpg"}
+							}
+							geometry Sphere {radius 0.17}
+						}
+					]
+				}
+			]
+		}
+		
+		
+	]
+}
+
+# ROTACIJA ZEMLJE
+DEF BrojacRZ TimeSensor {
+	cycleInterval 60.0
+	loop TRUE
+	startTime 0.0
+    stopTime 0.0
+}
+
+DEF OIZem OrientationInterpolator {
+	key [0.0, 0.5, 1.0]
+	keyValue [0.0 1.0 0.0 0.0, 0.0 1.0 0.0 3.141, 0.0 1.0 0.0 6.282]
+}
+
+ROUTE BrojacRZ.fraction_changed TO OIZem.set_fraction
+ROUTE OIZem.value_changed TO ZemljaMjesec.set_rotation
+
+# ROTACIJA MJESECA
+DEF BrojacRM TimeSensor {
+	cycleInterval 4.61
+	loop TRUE
+	startTime 0.0
+    stopTime 0.0
+}
+
+DEF OInterpolatorMjesec OrientationInterpolator {
+	key [0.0, 0.5, 1.0]
+	keyValue [0.0 1.0 0.0 0.0, 0.0 1.0 0.0 3.141, 0.0 1.0 0.0 6.282]
+}
+
+ROUTE BrojacRM.fraction_changed TO OInterpolatorMjesec.set_fraction
+ROUTE OInterpolatorMjesec.value_changed TO Mjesec.set_rotation
+
+DEF BRZemlje TimeSensor {
+	cycleInterval 0.164
+	loop TRUE
+	startTime 0.0
+    stopTime 0.0
+}
+
+DEF OIRZemlja OrientationInterpolator {
+	key [0.0, 0.5, 1.0]
+	keyValue [0.0 1.0 0.0 0.0, 0.0 1.0 0.0 3.141, 0.0 1.0 0.0 6.282]
+}
+
+ROUTE BRZemlje.fraction_changed TO OIRZemlja.set_fraction
+ROUTE OIRZemlja.value_changed TO Zemlja.set_rotation
+
+DEF BRSunca TimeSensor {
+	cycleInterval 4.1
+	loop TRUE
+	startTime 0.0
+    stopTime 0.0
+}
+
+DEF OInterRotSunce OrientationInterpolator {
+	key [0.0, 0.5, 1.0]
+	keyValue [0.0 1.0 0.0 0.0, 0.0 1.0 0.0 3.141, 0.0 1.0 0.0 6.282]
+}
+
+ROUTE BRSunca.fraction_changed TO OInterRotSunce.set_fraction
+ROUTE OInterRotSunce.value_changed TO Sunce.set_rotation
