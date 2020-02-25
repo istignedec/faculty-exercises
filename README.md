@@ -1,2 +1,2 @@
 # faculty-exercises
-Laboratory Exercises of some courses at Faculty of Electrical Engineering and Computing
+Programs from university courses at Faculty of Electrical Engineering and Computing
