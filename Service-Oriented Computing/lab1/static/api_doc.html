@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>API DOCUMENTATION</h1>
+
+<p>
+GENRE<br><br>
+
+<b>all users :</b><br>
+/music/api/genres GET - returns a list of all genres<br>
+/music/api/genres/id GET - returns information of genre with specified id<br>
+<br>
+<b>ivan :</b><br>
+/music/api/genres POST - creates a new genre<br>
+/music/api/genres/id PUT - updates genre information (artists over their id)<br>
+/music/api/genres/id DELETE - deletes genre with specified id<br>
+
+<br><br>
+
+ARTIST<br><br>
+
+<b>all users :</b><br>
+/music/api/artists GET - returns a list of all artists<br>
+/music/api/artists/id GET - returns information of artist with specified id<br>
+/music/api/genres/id/artists GET - returns a lists of artists for specified genre id<br>
+<br>
+<b>ivan :</b><br>
+/music/api/artists POST - creates a new artist<br>
+/music/api/artists/id PUT - updates artist information<br>
+/music/api/artists/id DELETE - deletes artist with specified id<br>
+
+<br><br>
+
+DOCUMENTATION<br><br>
+/music/api GET - returns a documentation page
+</p>
+
+</body>
+</html>
