@@ -1,0 +1,6 @@
+1. func@0x100f32ce			42.51 %
+2. DCT						33.47 %
+3. _stdio_common_vfprintf	10.55 %
+4. cos						4.91 %
+5. fread					1.62 %
+Vrijeme izvodjenja : 5.497 s

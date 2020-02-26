@@ -1,0 +1,2 @@
+DZ3 Vrijeme izvodjenja : 5.497 s
+DZ4 Vrijeme izvodjenja : 0.898 s

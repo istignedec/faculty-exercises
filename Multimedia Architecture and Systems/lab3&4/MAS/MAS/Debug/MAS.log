@@ -1,0 +1,9 @@
+﻿  ivan_stignedec_1.c
+c:\users\istignedec\source\repos\mas\mas\ivan_stignedec_1.c(21): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\istignedec\source\repos\mas\mas\ivan_stignedec_1.c(22): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\istignedec\source\repos\mas\mas\ivan_stignedec_1.c(23): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\istignedec\source\repos\mas\mas\ivan_stignedec_1.c(46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\istignedec\source\repos\mas\mas\ivan_stignedec_1.c(59): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\istignedec\source\repos\mas\mas\ivan_stignedec_1.c(93): warning C4244: '=': conversion from 'Ipp32f' to 'short', possible loss of data
+c:\users\istignedec\source\repos\mas\mas\ivan_stignedec_1.c(144): warning C4244: '=': conversion from 'float' to 'short', possible loss of data
+  MAS.vcxproj -> C:\Users\istignedec\source\repos\MAS\Debug\MAS.exe
