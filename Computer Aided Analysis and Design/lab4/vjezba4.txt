@@ -1,0 +1,180 @@
+Zadatak 1. - double
+
+f1 :
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 2
+Broj evaluacija funkcije cilja (max = 100 000) : 25 858
+
+f3 :
+
+epsilon = 10^-6, velicinaPopulacije = 30, pm = 0.25, N = 5
+Broj evaluacija funkcije cilja (max = 100 000) : 9325
+
+f6 :
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 1
+Broj evaluacija funkcije cilja (max = 100 000) : 1206
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 2
+Broj evaluacija funkcije cilja (max = 100 000) : 63 080
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 3
+Broj evaluacija funkcije cilja (max = 100 000) : 92 974
+
+f7 :
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 1
+Broj evaluacija funkcije cilja (max = 100 000) : 3535
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 2
+Broj evaluacija funkcije cilja (max = 100 000) : 100 000 (ne uspije naci, stane na dobroti 0.000026)
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 3
+Broj evaluacija funkcije cilja (max = 100 000) : 100 000 (ne uspije naci, stane na dobroti 0.015149)
+
+
+Zadatak 1 - binary
+
+f1 :
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.25, N = 2, p = 3
+Broj evaluacija funkcije cilja (max = 100 000) : 100 000 (ne uspije naci, stane na dobroti 1.006113)
+
+f3 :
+
+epsilon = 10^-6, velicinaPopulacije = 30, pm = 0.25, N = 5, p = 3
+Broj evaluacija funkcije cilja (max = 100 000) : 100 000 (ne uspije naci, stane na dobroti 0.195610)
+
+f6 :
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 1, p = 3
+Broj evaluacija funkcije cilja (max = 100 000) : 801
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 2, p = 3
+Broj evaluacija funkcije cilja (max = 100 000) : 100 000 (ne uspije naci, stane na dobroti 0.000009)
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 3, p = 3
+Broj evaluacija funkcije cilja (max = 100 000) : 100 000 (ne uspije naci, stane na dobroti 0.009720)
+
+f7 :
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 1, p = 3
+Broj evaluacija funkcije cilja (max = 100 000) : 100 000 (ne uspije naci, stane na dobroti 0.055247)
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 2, p = 3
+Broj evaluacija funkcije cilja (max = 100 000) : 100 000 (ne uspije naci, stane na dobroti 0.055247)
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 3, p = 3
+Broj evaluacija funkcije cilja (max = 100 000) : 100 000 (ne uspije naci, stane na dobroti 0.055247)
+
+
+Zadatak 2. - double
+
+f6 :
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 1
+Broj evaluacija funkcije cilja (max = 1 000 000) : 815
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 3
+Broj evaluacija funkcije cilja (max = 1 000 000) : 640 251
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 6
+Broj evaluacija funkcije cilja (max = 1 000 000) : 1 000 000 (ne uspije naci, stane na dobroti 0.009716)
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 10
+Broj evaluacija funkcije cilja (max = 1 000 000) : 1 000 000 (ne uspije naci, stane na dobroti 0.009716)
+
+
+f7 :
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 1
+Broj evaluacija funkcije cilja (max = 1 000 000) : 3047
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 3
+Broj evaluacija funkcije cilja (max = 1 000 000) : 1 000 000 (ne uspije naci, stane na dobroti 0.005364)
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 6
+Broj evaluacija funkcije cilja (max = 1 000 000) : 1 000 000 (ne uspije naci, stane na dobroti 6.189725)
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 10
+Broj evaluacija funkcije cilja (max = 1 000 000) : 1 000 000 (ne uspije naci, stane na dobroti 7.170735)
+
+
+Zadatak 3. - binary
+
+f6 :
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 3, p = 4
+Broj evaluacija funkcije cilja (max = 1 000 000) : 1 000 000 (ne uspije naci, stane na dobroti 0.009716)
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 6, p = 4
+Broj evaluacija funkcije cilja (max = 1 000 000) : 1 000 000 (ne uspije naci, stane na dobroti 0.489863)
+
+f7 :
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 3, p = 4
+Broj evaluacija funkcije cilja (max = 1 000 000) : 1 000 000 (ne uspije naci, stane na dobroti 0.031507)
+
+epsilon = 10^-6, velicinaPopulacije = 100, pm = 0.5, N = 6, p = 4
+Broj evaluacija funkcije cilja (max = 1 000 000) : 1 000 000 (ne uspije naci, stane na dobroti 7.155121)
+
+
+Zadatak 4. - double
+
+f6 :
+
+velicinaPopulacije = 30, pm = 0.1, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 1 000 000 (ne uspije naci, stane na dobroti 0.009716)
+
+velicinaPopulacije = 50, pm = 0.1, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 694 192
+
+velicinaPopulacije = 100, pm = 0.1, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 857 974
+
+velicinaPopulacije = 200, pm = 0.1, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 84 955
+
+
+velicinaPopulacije = 30, pm = 0.3, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 88 361
+
+velicinaPopulacije = 50, pm = 0.3, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 61 358
+
+velicinaPopulacije = 100, pm = 0.3, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 8330
+
+velicinaPopulacije = 200, pm = 0.3, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 24 015
+
+
+velicinaPopulacije = 30, pm = 0.6, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 47 435
+
+velicinaPopulacije = 50, pm = 0.6, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 35 111
+
+velicinaPopulacije = 100, pm = 0.6, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 29 014
+
+velicinaPopulacije = 200, pm = 0.6, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 23 017
+
+
+velicinaPopulacije = 30, pm = 0.9, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 368 335
+
+velicinaPopulacije = 50, pm = 0.9, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 230 656
+
+velicinaPopulacije = 100, pm = 0.9, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 197 408
+
+velicinaPopulacije = 200, pm = 0.9, N = 2
+Broj evaluacija funkcije cilja (max = 1 000 000) : 264 023
+
+
+Zadatak 5. - double
+
+Veci k, brze nadje jer je veca sansa da ce izbaciti losijeg (najlosijeg) kad ima veci izbor.

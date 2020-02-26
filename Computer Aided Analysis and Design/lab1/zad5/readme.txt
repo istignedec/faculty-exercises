@@ -1,0 +1,1 @@
+LU ne radi, LUP radi, točno rješenje je 0 0 3, dobiveno je -1.0362081563168128E-15 5.329070518200752E-16 3.0000000000000004, jer je razlika manja od EPSILON.

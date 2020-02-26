@@ -1,0 +1,1 @@
+Sa LU se ne može, sa LUP se može.

@@ -1,0 +1,1 @@
+Ovaj je projekt stvoren unutar razvojne okoline Microsoft Visual Studio 2015.

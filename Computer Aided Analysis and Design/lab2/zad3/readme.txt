@@ -1,0 +1,1 @@
+HJ ne nađe točno, stane na 5, 5. Simplex nađe točno.

@@ -1,0 +1,4 @@
+zadatak1 (fja3) - epsilon = 0.000001 (1*10^-6)
+
+true (optimalno) : br. poziva fje. : 40, br. poziva gradijenta : 2 (naslo minimum (2, -3))
+false : br. poziva fje. : 103, br. poziva gradijenta : 101 (divergencija!, naslo min (4, -6))

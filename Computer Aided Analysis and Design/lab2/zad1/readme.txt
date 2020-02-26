@@ -1,0 +1,1 @@
+Kad udaljavam početnu točku od minimuma, broj poziva kod simpleksa se puno poveća, kod drugih manje. Kod simpleksa i je najveći broj poziva, onda ide HJ, pa po koord. osima, pa zlatni rez.

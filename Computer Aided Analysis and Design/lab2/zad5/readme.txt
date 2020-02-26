@@ -1,0 +1,1 @@
+Vjerojatnost je 0, odnosno ista tolika kolika je vjerojatnost da dobijemo random početnu točku (0, 0), što je minimum.
